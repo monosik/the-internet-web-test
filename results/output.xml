@@ -1,682 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.4 on win32)" generated="20230629 17:36:38.000" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.10.4 on win32)" generated="20230726 14:58:45.141" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="G:\Automated\the-internet-web-test\tests">
-<suite id="s1-s1" name="TC File Upload" source="G:\Automated\the-internet-web-test\tests\TC_File_Upload.robot">
-<test id="s1-s1-t1" name="File Upload" line="6">
+<suite id="s1-s1" name="TC Add Remove Element" source="G:\Automated\the-internet-web-test\tests\TC_Add_Remove_Element.robot">
+<test id="s1-s1-t1" name="Multiple Window" line="6">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://the-internet.herokuapp.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230629 17:36:38.215" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
-<status status="PASS" starttime="20230629 17:36:38.214" endtime="20230629 17:36:44.694"/>
+<msg timestamp="20230726 14:58:45.430" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg timestamp="20230726 14:58:46.449" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 14:58:46.449" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20230726 14:58:45.430" endtime="20230726 14:58:46.452"/>
+</kw>
+<kw name="Click Add Remove Elements Menu" library="home_page">
+<status status="NOT RUN" starttime="20230726 14:58:46.452" endtime="20230726 14:58:46.452"/>
+</kw>
+<kw name="add_remove_element_page.Click Add Element">
+<status status="NOT RUN" starttime="20230726 14:58:46.456" endtime="20230726 14:58:46.456"/>
+</kw>
+<kw name="add_remove_element_page.Verify Element Added">
+<status status="NOT RUN" starttime="20230726 14:58:46.460" endtime="20230726 14:58:46.460"/>
+</kw>
+<kw name="add_remove_element_page.Click Delete Element">
+<status status="NOT RUN" starttime="20230726 14:58:46.463" endtime="20230726 14:58:46.463"/>
+</kw>
+<kw name="add_remove_element_page.Verify Element Deleted">
+<status status="NOT RUN" starttime="20230726 14:58:46.469" endtime="20230726 14:58:46.469"/>
+</kw>
+<status status="FAIL" starttime="20230726 14:58:45.429" endtime="20230726 14:58:46.469">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230726 14:58:46.471" endtime="20230726 14:58:46.471"/>
+</kw>
+<status status="FAIL" starttime="20230726 14:58:45.167" endtime="20230726 14:58:46.471"/>
+</suite>
+<suite id="s1-s2" name="TC File Upload" source="G:\Automated\the-internet-web-test\tests\TC_File_Upload.robot">
+<test id="s1-s2-t1" name="File Upload" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://the-internet.herokuapp.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230726 14:58:46.489" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg timestamp="20230726 14:58:47.396" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 14:58:47.397" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20230726 14:58:46.489" endtime="20230726 14:58:47.397"/>
 </kw>
 <kw name="Click File Upload Menu" library="home_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${MULTIPLE.WINDOWS.TEXT}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:36:44.695" endtime="20230629 17:36:44.713"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${FILE.UPLOAD.TEXT}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:36:44.714" level="INFO">Clicking element '//a[@href='/upload']'.</msg>
-<status status="PASS" starttime="20230629 17:36:44.713" endtime="20230629 17:36:45.704"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:44.694" endtime="20230629 17:36:45.705"/>
+<status status="NOT RUN" starttime="20230726 14:58:47.398" endtime="20230726 14:58:47.398"/>
 </kw>
 <kw name="Click Choose File" library="file_upload_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${FILE.UPLOADER.TITLE}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:36:45.707" endtime="20230629 17:36:45.745"/>
-</kw>
-<kw name="Choose File" library="SeleniumLibrary">
-<arg>${CHOOSE.FILE.BUTTON}</arg>
-<arg>G:\\Automated\\the-internet-web-test\\resources\\owl.png</arg>
-<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20230629 17:36:45.746" level="INFO">Sending G:\Automated\the-internet-web-test\resources\owl.png to browser.</msg>
-<status status="PASS" starttime="20230629 17:36:45.745" endtime="20230629 17:36:45.778"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:45.706" endtime="20230629 17:36:45.778"/>
+<status status="NOT RUN" starttime="20230726 14:58:47.398" endtime="20230726 14:58:47.398"/>
 </kw>
 <kw name="Click Submit File" library="file_upload_page">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${FILE.SUBMIT}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:36:45.780" level="INFO">Clicking element '//input[@id="file-submit"]'.</msg>
-<status status="PASS" starttime="20230629 17:36:45.779" endtime="20230629 17:36:46.135"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:45.778" endtime="20230629 17:36:46.135"/>
+<status status="NOT RUN" starttime="20230726 14:58:47.398" endtime="20230726 14:58:47.398"/>
 </kw>
 <kw name="Verify File Upload" library="file_upload_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${FILE.NAME.TEXT}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:36:46.136" endtime="20230629 17:36:46.156"/>
+<status status="NOT RUN" starttime="20230726 14:58:47.399" endtime="20230726 14:58:47.399"/>
 </kw>
-<status status="PASS" starttime="20230629 17:36:46.135" endtime="20230629 17:36:46.157"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:38.214" endtime="20230629 17:36:46.157"/>
+<status status="FAIL" starttime="20230726 14:58:46.488" endtime="20230726 14:58:47.399">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230629 17:36:46.158" endtime="20230629 17:36:48.241"/>
+<status status="PASS" starttime="20230726 14:58:47.400" endtime="20230726 14:58:47.400"/>
 </kw>
-<status status="PASS" starttime="20230629 17:36:38.020" endtime="20230629 17:36:48.241"/>
+<status status="FAIL" starttime="20230726 14:58:46.473" endtime="20230726 14:58:47.400"/>
 </suite>
-<suite id="s1-s2" name="TC Multiple Windows" source="G:\Automated\the-internet-web-test\tests\TC_Multiple_Windows.robot">
-<test id="s1-s2-t1" name="Multiple Window" line="6">
+<suite id="s1-s3" name="TC Multiple Windows" source="G:\Automated\the-internet-web-test\tests\TC_Multiple_Windows.robot">
+<test id="s1-s3-t1" name="Multiple Window" line="6">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://the-internet.herokuapp.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230629 17:36:48.265" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
-<status status="PASS" starttime="20230629 17:36:48.264" endtime="20230629 17:36:53.424"/>
+<msg timestamp="20230726 14:58:47.419" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg timestamp="20230726 14:58:48.361" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 14:58:48.361" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20230726 14:58:47.419" endtime="20230726 14:58:48.361"/>
 </kw>
 <kw name="Click Multiple Window Menu" library="home_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${MULTIPLE.WINDOWS.TEXT}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:36:53.425" endtime="20230629 17:36:53.443"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${MULTIPLE.WINDOWS.TEXT}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:36:53.443" level="INFO">Clicking element '//a[@href='/windows']'.</msg>
-<status status="PASS" starttime="20230629 17:36:53.443" endtime="20230629 17:36:53.818"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:53.425" endtime="20230629 17:36:53.818"/>
+<status status="NOT RUN" starttime="20230726 14:58:48.362" endtime="20230726 14:58:48.362"/>
 </kw>
 <kw name="Click Open New Window" library="multiple_windows_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${OPEN.NEW.WINDOW.TITLE}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:36:53.819" endtime="20230629 17:36:53.835"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${OPEN.NEW.WINDOW.BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:36:53.836" level="INFO">Clicking element '//a[@href='/windows/new']'.</msg>
-<status status="PASS" starttime="20230629 17:36:53.835" endtime="20230629 17:36:53.877"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:53.819" endtime="20230629 17:36:53.877"/>
+<status status="NOT RUN" starttime="20230726 14:58:48.362" endtime="20230726 14:58:48.362"/>
 </kw>
 <kw name="Verify Have Both New Window and Old Window" library="multiple_windows_feature">
-<kw name="Get Window Handles" library="SeleniumLibrary">
-<var>${handles}</var>
-<doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20230629 17:36:53.885" level="INFO">${handles} = ['3D1D6CC56B5A446FA542A0950FF7E44D', 'C2FFD9BD88E6463AD11F026B484C156F']</msg>
-<status status="PASS" starttime="20230629 17:36:53.878" endtime="20230629 17:36:53.885"/>
+<status status="NOT RUN" starttime="20230726 14:58:48.363" endtime="20230726 14:58:48.363"/>
 </kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${new_window}</var>
-<arg>${handles}[1]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230629 17:36:53.885" level="INFO">${new_window} = C2FFD9BD88E6463AD11F026B484C156F</msg>
-<status status="PASS" starttime="20230629 17:36:53.885" endtime="20230629 17:36:53.885"/>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>${new_window}</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230629 17:36:53.885" endtime="20230629 17:36:53.918"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${NEW.WINDOW.TITLE}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:36:53.918" endtime="20230629 17:36:54.239"/>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>${handles}[0]</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230629 17:36:54.239" endtime="20230629 17:36:54.253"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${OPEN.NEW.WINDOW.TITLE}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:36:54.253" endtime="20230629 17:36:54.272"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:53.878" endtime="20230629 17:36:54.272"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:48.264" endtime="20230629 17:36:54.272"/>
+<status status="FAIL" starttime="20230726 14:58:47.419" endtime="20230726 14:58:48.363">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230629 17:36:54.274" endtime="20230629 17:36:56.341"/>
+<status status="PASS" starttime="20230726 14:58:48.364" endtime="20230726 14:58:48.365"/>
 </kw>
-<status status="PASS" starttime="20230629 17:36:48.244" endtime="20230629 17:36:56.342"/>
+<status status="FAIL" starttime="20230726 14:58:47.402" endtime="20230726 14:58:48.365"/>
 </suite>
-<suite id="s1-s3" name="TC Sortable Data Tables" source="G:\Automated\the-internet-web-test\tests\TC_Sortable_Data_Tables.robot">
-<test id="s1-s3-t1" name="Sort Data Tables" line="6">
+<suite id="s1-s4" name="TC Sortable Data Tables" source="G:\Automated\the-internet-web-test\tests\TC_Sortable_Data_Tables.robot">
+<test id="s1-s4-t1" name="Sort Data Tables" line="6">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://the-internet.herokuapp.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230629 17:36:56.395" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
-<status status="PASS" starttime="20230629 17:36:56.394" endtime="20230629 17:37:01.233"/>
+<msg timestamp="20230726 14:58:48.382" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg timestamp="20230726 14:58:49.270" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 14:58:49.270" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20230726 14:58:48.382" endtime="20230726 14:58:49.270"/>
 </kw>
 <kw name="Click Sort Data Tables Menu" library="home_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${SORTABLE.DATA.TABLES.TEXT}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:37:01.234" endtime="20230629 17:37:01.251"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${SORTABLE.DATA.TABLES.TEXT}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:01.252" level="INFO">Clicking element '//a[@href='/tables']'.</msg>
-<status status="PASS" starttime="20230629 17:37:01.252" endtime="20230629 17:37:01.926"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:01.234" endtime="20230629 17:37:01.927"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.271" endtime="20230726 14:58:49.271"/>
 </kw>
 <kw name="Click Sort Last Name For Example1" library="sortable_data_tables_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${EXAMPLE.1.LAST.NAME.HEADER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:37:01.928" endtime="20230629 17:37:01.961"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${EXAMPLE.1.LAST.NAME.HEADER}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:01.962" level="INFO">Clicking element '(//span[contains(text(), "Last Name")])[1]'.</msg>
-<status status="PASS" starttime="20230629 17:37:01.961" endtime="20230629 17:37:02.000"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:01.927" endtime="20230629 17:37:02.001"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.272" endtime="20230726 14:58:49.272"/>
 </kw>
 <kw name="Verify Sort Data Example1" library="sortable_data_tables_feature">
-<kw name="Create List" library="BuiltIn">
-<var>${actual_data_list}</var>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20230629 17:37:02.002" level="INFO">${actual_data_list} = []</msg>
-<status status="PASS" starttime="20230629 17:37:02.001" endtime="20230629 17:37:02.002"/>
-</kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<var>${count}</var>
-<arg>${EXAMPLE.1.LAST.NAME.ITEM}</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.018" level="INFO">${count} = 4</msg>
-<status status="PASS" starttime="20230629 17:37:02.002" endtime="20230629 17:37:02.018"/>
-</kw>
-<for flavor="IN RANGE">
-<var>${index}</var>
-<value>${count}</value>
-<iter>
-<var name="${index}">0</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.1.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.047" level="INFO">${value} = Bach</msg>
-<status status="PASS" starttime="20230629 17:37:02.018" endtime="20230629 17:37:02.047"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.047" endtime="20230629 17:37:02.047"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.018" endtime="20230629 17:37:02.047"/>
-</iter>
-<iter>
-<var name="${index}">1</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.1.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.065" level="INFO">${value} = Conway</msg>
-<status status="PASS" starttime="20230629 17:37:02.047" endtime="20230629 17:37:02.065"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.065" endtime="20230629 17:37:02.065"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.047" endtime="20230629 17:37:02.065"/>
-</iter>
-<iter>
-<var name="${index}">2</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.1.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.077" level="INFO">${value} = Doe</msg>
-<status status="PASS" starttime="20230629 17:37:02.065" endtime="20230629 17:37:02.077"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.077" endtime="20230629 17:37:02.078"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.065" endtime="20230629 17:37:02.078"/>
-</iter>
-<iter>
-<var name="${index}">3</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.1.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.089" level="INFO">${value} = Smith</msg>
-<status status="PASS" starttime="20230629 17:37:02.078" endtime="20230629 17:37:02.089"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.089" endtime="20230629 17:37:02.089"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.078" endtime="20230629 17:37:02.089"/>
-</iter>
-<status status="PASS" starttime="20230629 17:37:02.018" endtime="20230629 17:37:02.089"/>
-</for>
-<kw name="Create List" library="BuiltIn">
-<var>${expect_data_list}</var>
-<arg>Bach</arg>
-<arg>Conway</arg>
-<arg>Doe</arg>
-<arg>Smith</arg>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20230629 17:37:02.090" level="INFO">${expect_data_list} = ['Bach', 'Conway', 'Doe', 'Smith']</msg>
-<status status="PASS" starttime="20230629 17:37:02.089" endtime="20230629 17:37:02.090"/>
-</kw>
-<kw name="Lists Should Be Equal" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${expect_data_list}</arg>
-<doc>Fails if given lists are unequal.</doc>
-<status status="PASS" starttime="20230629 17:37:02.090" endtime="20230629 17:37:02.090"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.001" endtime="20230629 17:37:02.090"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.272" endtime="20230726 14:58:49.272"/>
 </kw>
 <kw name="Click Sort Last Name For Example1" library="sortable_data_tables_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${EXAMPLE.1.LAST.NAME.HEADER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:37:02.090" endtime="20230629 17:37:02.100"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${EXAMPLE.1.LAST.NAME.HEADER}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.101" level="INFO">Clicking element '(//span[contains(text(), "Last Name")])[1]'.</msg>
-<status status="PASS" starttime="20230629 17:37:02.100" endtime="20230629 17:37:02.119"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.090" endtime="20230629 17:37:02.121"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.272" endtime="20230726 14:58:49.272"/>
 </kw>
 <kw name="Verify Reverse Sort Data Example1" library="sortable_data_tables_feature">
-<kw name="Create List" library="BuiltIn">
-<var>${actual_data_list}</var>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20230629 17:37:02.121" level="INFO">${actual_data_list} = []</msg>
-<status status="PASS" starttime="20230629 17:37:02.121" endtime="20230629 17:37:02.121"/>
-</kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<var>${count}</var>
-<arg>${EXAMPLE.1.LAST.NAME.ITEM}</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.128" level="INFO">${count} = 4</msg>
-<status status="PASS" starttime="20230629 17:37:02.121" endtime="20230629 17:37:02.128"/>
-</kw>
-<for flavor="IN RANGE">
-<var>${index}</var>
-<value>${count}</value>
-<iter>
-<var name="${index}">0</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.1.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.137" level="INFO">${value} = Smith</msg>
-<status status="PASS" starttime="20230629 17:37:02.128" endtime="20230629 17:37:02.137"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.137" endtime="20230629 17:37:02.137"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.128" endtime="20230629 17:37:02.137"/>
-</iter>
-<iter>
-<var name="${index}">1</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.1.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.146" level="INFO">${value} = Doe</msg>
-<status status="PASS" starttime="20230629 17:37:02.137" endtime="20230629 17:37:02.146"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.146" endtime="20230629 17:37:02.146"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.137" endtime="20230629 17:37:02.146"/>
-</iter>
-<iter>
-<var name="${index}">2</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.1.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.156" level="INFO">${value} = Conway</msg>
-<status status="PASS" starttime="20230629 17:37:02.147" endtime="20230629 17:37:02.156"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.156" endtime="20230629 17:37:02.156"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.147" endtime="20230629 17:37:02.156"/>
-</iter>
-<iter>
-<var name="${index}">3</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.1.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.165" level="INFO">${value} = Bach</msg>
-<status status="PASS" starttime="20230629 17:37:02.156" endtime="20230629 17:37:02.165"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.166" endtime="20230629 17:37:02.166"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.156" endtime="20230629 17:37:02.166"/>
-</iter>
-<status status="PASS" starttime="20230629 17:37:02.128" endtime="20230629 17:37:02.166"/>
-</for>
-<kw name="Create List" library="BuiltIn">
-<var>${expect_data_list}</var>
-<arg>Smith</arg>
-<arg>Doe</arg>
-<arg>Conway</arg>
-<arg>Bach</arg>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20230629 17:37:02.166" level="INFO">${expect_data_list} = ['Smith', 'Doe', 'Conway', 'Bach']</msg>
-<status status="PASS" starttime="20230629 17:37:02.166" endtime="20230629 17:37:02.166"/>
-</kw>
-<kw name="Lists Should Be Equal" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${expect_data_list}</arg>
-<doc>Fails if given lists are unequal.</doc>
-<status status="PASS" starttime="20230629 17:37:02.166" endtime="20230629 17:37:02.166"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.121" endtime="20230629 17:37:02.167"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.272" endtime="20230726 14:58:49.272"/>
 </kw>
 <kw name="Click Sort Last Name For Example2" library="sortable_data_tables_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${EXAMPLE.2.LAST.NAME.HEADER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:37:02.167" endtime="20230629 17:37:02.179"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${EXAMPLE.2.LAST.NAME.HEADER}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.181" level="INFO">Clicking element '//span[@class="last-name"]'.</msg>
-<status status="PASS" starttime="20230629 17:37:02.179" endtime="20230629 17:37:02.202"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.167" endtime="20230629 17:37:02.202"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.273" endtime="20230726 14:58:49.273"/>
 </kw>
 <kw name="Verify Sort Data Example2" library="sortable_data_tables_feature">
-<kw name="Create List" library="BuiltIn">
-<var>${actual_data_list}</var>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20230629 17:37:02.202" level="INFO">${actual_data_list} = []</msg>
-<status status="PASS" starttime="20230629 17:37:02.202" endtime="20230629 17:37:02.202"/>
-</kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<var>${count}</var>
-<arg>${EXAMPLE.2.LAST.NAME.ITEM}</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.211" level="INFO">${count} = 4</msg>
-<status status="PASS" starttime="20230629 17:37:02.203" endtime="20230629 17:37:02.211"/>
-</kw>
-<for flavor="IN RANGE">
-<var>${index}</var>
-<value>${count}</value>
-<iter>
-<var name="${index}">0</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.2.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.225" level="INFO">${value} = Bach</msg>
-<status status="PASS" starttime="20230629 17:37:02.211" endtime="20230629 17:37:02.225"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.225" endtime="20230629 17:37:02.225"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.211" endtime="20230629 17:37:02.225"/>
-</iter>
-<iter>
-<var name="${index}">1</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.2.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.237" level="INFO">${value} = Conway</msg>
-<status status="PASS" starttime="20230629 17:37:02.225" endtime="20230629 17:37:02.237"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.237" endtime="20230629 17:37:02.237"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.225" endtime="20230629 17:37:02.237"/>
-</iter>
-<iter>
-<var name="${index}">2</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.2.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.249" level="INFO">${value} = Doe</msg>
-<status status="PASS" starttime="20230629 17:37:02.238" endtime="20230629 17:37:02.249"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.249" endtime="20230629 17:37:02.251"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.237" endtime="20230629 17:37:02.251"/>
-</iter>
-<iter>
-<var name="${index}">3</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.2.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.263" level="INFO">${value} = Smith</msg>
-<status status="PASS" starttime="20230629 17:37:02.251" endtime="20230629 17:37:02.263"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.263" endtime="20230629 17:37:02.264"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.251" endtime="20230629 17:37:02.264"/>
-</iter>
-<status status="PASS" starttime="20230629 17:37:02.211" endtime="20230629 17:37:02.264"/>
-</for>
-<kw name="Create List" library="BuiltIn">
-<var>${expect_data_list}</var>
-<arg>Bach</arg>
-<arg>Conway</arg>
-<arg>Doe</arg>
-<arg>Smith</arg>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20230629 17:37:02.264" level="INFO">${expect_data_list} = ['Bach', 'Conway', 'Doe', 'Smith']</msg>
-<status status="PASS" starttime="20230629 17:37:02.264" endtime="20230629 17:37:02.264"/>
-</kw>
-<kw name="Lists Should Be Equal" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${expect_data_list}</arg>
-<doc>Fails if given lists are unequal.</doc>
-<status status="PASS" starttime="20230629 17:37:02.264" endtime="20230629 17:37:02.264"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.202" endtime="20230629 17:37:02.264"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.273" endtime="20230726 14:58:49.273"/>
 </kw>
 <kw name="Click Sort Last Name For Example2" library="sortable_data_tables_page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${EXAMPLE.2.LAST.NAME.HEADER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230629 17:37:02.265" endtime="20230629 17:37:02.273"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${EXAMPLE.2.LAST.NAME.HEADER}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.274" level="INFO">Clicking element '//span[@class="last-name"]'.</msg>
-<status status="PASS" starttime="20230629 17:37:02.274" endtime="20230629 17:37:02.294"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.264" endtime="20230629 17:37:02.294"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.273" endtime="20230726 14:58:49.273"/>
 </kw>
 <kw name="Verify Reverse Sort Data Example2" library="sortable_data_tables_feature">
-<kw name="Create List" library="BuiltIn">
-<var>${actual_data_list}</var>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20230629 17:37:02.295" level="INFO">${actual_data_list} = []</msg>
-<status status="PASS" starttime="20230629 17:37:02.295" endtime="20230629 17:37:02.295"/>
+<status status="NOT RUN" starttime="20230726 14:58:49.273" endtime="20230726 14:58:49.273"/>
 </kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<var>${count}</var>
-<arg>${EXAMPLE.2.LAST.NAME.ITEM}</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.300" level="INFO">${count} = 4</msg>
-<status status="PASS" starttime="20230629 17:37:02.295" endtime="20230629 17:37:02.300"/>
-</kw>
-<for flavor="IN RANGE">
-<var>${index}</var>
-<value>${count}</value>
-<iter>
-<var name="${index}">0</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.2.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.311" level="INFO">${value} = Smith</msg>
-<status status="PASS" starttime="20230629 17:37:02.301" endtime="20230629 17:37:02.311"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.311" endtime="20230629 17:37:02.311"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.301" endtime="20230629 17:37:02.311"/>
-</iter>
-<iter>
-<var name="${index}">1</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.2.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.324" level="INFO">${value} = Doe</msg>
-<status status="PASS" starttime="20230629 17:37:02.311" endtime="20230629 17:37:02.324"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.324" endtime="20230629 17:37:02.324"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.311" endtime="20230629 17:37:02.324"/>
-</iter>
-<iter>
-<var name="${index}">2</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.2.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.339" level="INFO">${value} = Conway</msg>
-<status status="PASS" starttime="20230629 17:37:02.324" endtime="20230629 17:37:02.339"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.339" endtime="20230629 17:37:02.339"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.324" endtime="20230629 17:37:02.339"/>
-</iter>
-<iter>
-<var name="${index}">3</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>(${EXAMPLE.2.LAST.NAME.ITEM})[${index}+1]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230629 17:37:02.351" level="INFO">${value} = Bach</msg>
-<status status="PASS" starttime="20230629 17:37:02.339" endtime="20230629 17:37:02.351"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${value}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230629 17:37:02.351" endtime="20230629 17:37:02.351"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.339" endtime="20230629 17:37:02.351"/>
-</iter>
-<status status="PASS" starttime="20230629 17:37:02.300" endtime="20230629 17:37:02.351"/>
-</for>
-<kw name="Create List" library="BuiltIn">
-<var>${expect_data_list}</var>
-<arg>Smith</arg>
-<arg>Doe</arg>
-<arg>Conway</arg>
-<arg>Bach</arg>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20230629 17:37:02.352" level="INFO">${expect_data_list} = ['Smith', 'Doe', 'Conway', 'Bach']</msg>
-<status status="PASS" starttime="20230629 17:37:02.351" endtime="20230629 17:37:02.352"/>
-</kw>
-<kw name="Lists Should Be Equal" library="Collections">
-<arg>${actual_data_list}</arg>
-<arg>${expect_data_list}</arg>
-<doc>Fails if given lists are unequal.</doc>
-<status status="PASS" starttime="20230629 17:37:02.352" endtime="20230629 17:37:02.352"/>
-</kw>
-<status status="PASS" starttime="20230629 17:37:02.294" endtime="20230629 17:37:02.352"/>
-</kw>
-<status status="PASS" starttime="20230629 17:36:56.393" endtime="20230629 17:37:02.352"/>
+<status status="FAIL" starttime="20230726 14:58:48.381" endtime="20230726 14:58:49.275">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230629 17:37:02.353" endtime="20230629 17:37:04.406"/>
+<status status="PASS" starttime="20230726 14:58:49.276" endtime="20230726 14:58:49.276"/>
 </kw>
-<status status="PASS" starttime="20230629 17:36:56.347" endtime="20230629 17:37:04.406"/>
+<status status="FAIL" starttime="20230726 14:58:48.365" endtime="20230726 14:58:49.277"/>
 </suite>
-<status status="PASS" starttime="20230629 17:36:38.001" endtime="20230629 17:37:04.413"/>
+<status status="FAIL" starttime="20230726 14:58:45.143" endtime="20230726 14:58:49.279"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC File Upload">Tests.TC File Upload</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC Multiple Windows">Tests.TC Multiple Windows</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s3" name="TC Sortable Data Tables">Tests.TC Sortable Data Tables</stat>
+<stat pass="0" fail="4" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TC Add Remove Element">Tests.TC Add Remove Element</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="TC File Upload">Tests.TC File Upload</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="TC Multiple Windows">Tests.TC Multiple Windows</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s4" name="TC Sortable Data Tables">Tests.TC Sortable Data Tables</stat>
 </suite>
 </statistics>
 <errors>

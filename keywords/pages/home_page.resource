@@ -10,3 +10,7 @@ Click Multiple Window Menu
 Click Sort Data Tables Menu
     SeleniumLibrary.Wait Until Element Is Visible    ${SORTABLE.DATA.TABLES.TEXT}    10s
     SeleniumLibrary.Click Element                    ${SORTABLE.DATA.TABLES.TEXT}
+
+Click Add Remove Elements Menu
+    SeleniumLibrary.Wait Until Element Is Visible    ${SORTABLE.DATA.TABLES.TEXT}    10s
+    SeleniumLibrary.Click Element                    ${SORTABLE.DATA.TABLES.TEXT}

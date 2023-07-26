@@ -45,20 +45,20 @@ FROM Users, Departments
 WHERE Departments.ID = Users.Departments;
 
 --Quiz2
-SELECT Users.ID, Users.NameThai, Users.Position, Departments.Code, Departments.Name
-FROM Departments INNER JOIN Users
-ON Departments.ID = Users.Departments;
+-- SELECT Users.ID, Users.NameThai, Users.Position, Departments.Code, Departments.Name
+-- FROM Departments INNER JOIN Users
+-- ON Departments.ID = Users.Departments;
 
 --Quiz3
-SELECT Departments.Code, Departments.Name, Users.NameThai, Users.Position 
-FROM Departments, Users
-WHERE Users.Departments = Departments.ID
-AND Name IN ("บริการวิศวกรรม (CES)", "ภารกิจบริหารงานวิจัยและบริการวิชาการ")
-ORDER BY Departments.Code DESC;
+-- SELECT Departments.Code, Departments.Name, Users.NameThai, Users.Position 
+-- FROM Departments, Users
+-- WHERE Users.Departments = Departments.ID
+-- AND Name IN ("บริการวิศวกรรม (CES)", "ภารกิจบริหารงานวิจัยและบริการวิชาการ")
+-- ORDER BY Departments.Code DESC;
 
 --Quiz3
-SELECT D.Code, D.Name, U.NameThai, U.Position
-FROM Departments D INNER JOIN Users U
-ON D.ID = U.Departments
-WHERE D.Name IN ("บริการวิศวกรรม (CES)", "ภารกิจบริหารงานวิจัยและบริการวิชาการ")
-ORDER BY D.Code DESC;
+-- SELECT D.Code, D.Name, U.NameThai, U.Position
+-- FROM Departments D INNER JOIN Users U
+-- ON D.ID = U.Departments
+-- WHERE D.Name IN ("บริการวิศวกรรม (CES)", "ภารกิจบริหารงานวิจัยและบริการวิชาการ")
+-- ORDER BY D.Code DESC;
