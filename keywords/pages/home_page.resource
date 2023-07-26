@@ -12,5 +12,5 @@ Click Sort Data Tables Menu
     SeleniumLibrary.Click Element                    ${SORTABLE.DATA.TABLES.TEXT}
 
 Click Add Remove Elements Menu
-    SeleniumLibrary.Wait Until Element Is Visible    ${SORTABLE.DATA.TABLES.TEXT}    10s
-    SeleniumLibrary.Click Element                    ${SORTABLE.DATA.TABLES.TEXT}
+    SeleniumLibrary.Wait Until Element Is Visible    ${ADD.REMOVE.ELEMENTS.TEXT}    10s
+    SeleniumLibrary.Click Element                    ${ADD.REMOVE.ELEMENTS.TEXT}

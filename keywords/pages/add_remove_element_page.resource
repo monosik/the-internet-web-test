@@ -4,10 +4,9 @@ Click Add Element
     SeleniumLibrary.Click Element                    ${ADD.ELEMENT.BUTTON}
 
 Verify Element Added
-    SeleniumLibrary.Wait Until Element Contains    ${DELETE.ELEMENT.BUTTON}
-
+    SeleniumLibrary.Wait Until Element Is Visible    ${DELETE.ELEMENT.BUTTON}
 Click Delete Element
     SeleniumLibrary.Click Element    ${DELETE.ELEMENT.BUTTON}
 
 Verify Element Deleted
-    SeleniumLibrary.Wait Until Element Contains    ${DELETE.ELEMENT.BUTTON}
+    SeleniumLibrary.Wait Until Element Is Not Visible    ${DELETE.ELEMENT.BUTTON}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.4 on win32)" generated="20230726 14:58:45.141" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.10.4 on win32)" generated="20230726 15:09:14.383" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="G:\Automated\the-internet-web-test\tests">
 <suite id="s1-s1" name="TC Add Remove Element" source="G:\Automated\the-internet-web-test\tests\TC_Add_Remove_Element.robot">
 <test id="s1-s1-t1" name="Multiple Window" line="6">
@@ -7,35 +7,35 @@
 <arg>https://the-internet.herokuapp.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:58:45.430" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
-<msg timestamp="20230726 14:58:46.449" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20230726 14:58:46.449" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<msg timestamp="20230726 15:09:14.681" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg timestamp="20230726 15:09:15.663" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 15:09:15.663" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </msg>
-<status status="FAIL" starttime="20230726 14:58:45.430" endtime="20230726 14:58:46.452"/>
+<status status="FAIL" starttime="20230726 15:09:14.680" endtime="20230726 15:09:15.666"/>
 </kw>
 <kw name="Click Add Remove Elements Menu" library="home_page">
-<status status="NOT RUN" starttime="20230726 14:58:46.452" endtime="20230726 14:58:46.452"/>
+<status status="NOT RUN" starttime="20230726 15:09:15.666" endtime="20230726 15:09:15.666"/>
 </kw>
 <kw name="add_remove_element_page.Click Add Element">
-<status status="NOT RUN" starttime="20230726 14:58:46.456" endtime="20230726 14:58:46.456"/>
+<status status="NOT RUN" starttime="20230726 15:09:15.670" endtime="20230726 15:09:15.670"/>
 </kw>
 <kw name="add_remove_element_page.Verify Element Added">
-<status status="NOT RUN" starttime="20230726 14:58:46.460" endtime="20230726 14:58:46.460"/>
+<status status="NOT RUN" starttime="20230726 15:09:15.674" endtime="20230726 15:09:15.674"/>
 </kw>
 <kw name="add_remove_element_page.Click Delete Element">
-<status status="NOT RUN" starttime="20230726 14:58:46.463" endtime="20230726 14:58:46.463"/>
+<status status="NOT RUN" starttime="20230726 15:09:15.678" endtime="20230726 15:09:15.678"/>
 </kw>
 <kw name="add_remove_element_page.Verify Element Deleted">
-<status status="NOT RUN" starttime="20230726 14:58:46.469" endtime="20230726 14:58:46.469"/>
+<status status="NOT RUN" starttime="20230726 15:09:15.682" endtime="20230726 15:09:15.682"/>
 </kw>
-<status status="FAIL" starttime="20230726 14:58:45.429" endtime="20230726 14:58:46.469">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<status status="FAIL" starttime="20230726 15:09:14.680" endtime="20230726 15:09:15.682">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:58:46.471" endtime="20230726 14:58:46.471"/>
+<status status="PASS" starttime="20230726 15:09:15.683" endtime="20230726 15:09:15.685"/>
 </kw>
-<status status="FAIL" starttime="20230726 14:58:45.167" endtime="20230726 14:58:46.471"/>
+<status status="FAIL" starttime="20230726 15:09:14.407" endtime="20230726 15:09:15.685"/>
 </suite>
 <suite id="s1-s2" name="TC File Upload" source="G:\Automated\the-internet-web-test\tests\TC_File_Upload.robot">
 <test id="s1-s2-t1" name="File Upload" line="6">
@@ -43,32 +43,32 @@
 <arg>https://the-internet.herokuapp.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:58:46.489" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
-<msg timestamp="20230726 14:58:47.396" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20230726 14:58:47.397" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<msg timestamp="20230726 15:09:15.702" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg timestamp="20230726 15:09:16.581" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 15:09:16.582" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </msg>
-<status status="FAIL" starttime="20230726 14:58:46.489" endtime="20230726 14:58:47.397"/>
+<status status="FAIL" starttime="20230726 15:09:15.702" endtime="20230726 15:09:16.582"/>
 </kw>
 <kw name="Click File Upload Menu" library="home_page">
-<status status="NOT RUN" starttime="20230726 14:58:47.398" endtime="20230726 14:58:47.398"/>
+<status status="NOT RUN" starttime="20230726 15:09:16.583" endtime="20230726 15:09:16.583"/>
 </kw>
 <kw name="Click Choose File" library="file_upload_page">
-<status status="NOT RUN" starttime="20230726 14:58:47.398" endtime="20230726 14:58:47.398"/>
+<status status="NOT RUN" starttime="20230726 15:09:16.583" endtime="20230726 15:09:16.583"/>
 </kw>
 <kw name="Click Submit File" library="file_upload_page">
-<status status="NOT RUN" starttime="20230726 14:58:47.398" endtime="20230726 14:58:47.398"/>
+<status status="NOT RUN" starttime="20230726 15:09:16.583" endtime="20230726 15:09:16.583"/>
 </kw>
 <kw name="Verify File Upload" library="file_upload_page">
-<status status="NOT RUN" starttime="20230726 14:58:47.399" endtime="20230726 14:58:47.399"/>
+<status status="NOT RUN" starttime="20230726 15:09:16.584" endtime="20230726 15:09:16.584"/>
 </kw>
-<status status="FAIL" starttime="20230726 14:58:46.488" endtime="20230726 14:58:47.399">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<status status="FAIL" starttime="20230726 15:09:15.701" endtime="20230726 15:09:16.584">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:58:47.400" endtime="20230726 14:58:47.400"/>
+<status status="PASS" starttime="20230726 15:09:16.585" endtime="20230726 15:09:16.585"/>
 </kw>
-<status status="FAIL" starttime="20230726 14:58:46.473" endtime="20230726 14:58:47.400"/>
+<status status="FAIL" starttime="20230726 15:09:15.686" endtime="20230726 15:09:16.585"/>
 </suite>
 <suite id="s1-s3" name="TC Multiple Windows" source="G:\Automated\the-internet-web-test\tests\TC_Multiple_Windows.robot">
 <test id="s1-s3-t1" name="Multiple Window" line="6">
@@ -76,29 +76,29 @@
 <arg>https://the-internet.herokuapp.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:58:47.419" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
-<msg timestamp="20230726 14:58:48.361" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20230726 14:58:48.361" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<msg timestamp="20230726 15:09:16.602" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg timestamp="20230726 15:09:17.515" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 15:09:17.515" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </msg>
-<status status="FAIL" starttime="20230726 14:58:47.419" endtime="20230726 14:58:48.361"/>
+<status status="FAIL" starttime="20230726 15:09:16.601" endtime="20230726 15:09:17.515"/>
 </kw>
 <kw name="Click Multiple Window Menu" library="home_page">
-<status status="NOT RUN" starttime="20230726 14:58:48.362" endtime="20230726 14:58:48.362"/>
+<status status="NOT RUN" starttime="20230726 15:09:17.516" endtime="20230726 15:09:17.516"/>
 </kw>
 <kw name="Click Open New Window" library="multiple_windows_page">
-<status status="NOT RUN" starttime="20230726 14:58:48.362" endtime="20230726 14:58:48.362"/>
+<status status="NOT RUN" starttime="20230726 15:09:17.516" endtime="20230726 15:09:17.516"/>
 </kw>
 <kw name="Verify Have Both New Window and Old Window" library="multiple_windows_feature">
-<status status="NOT RUN" starttime="20230726 14:58:48.363" endtime="20230726 14:58:48.363"/>
+<status status="NOT RUN" starttime="20230726 15:09:17.517" endtime="20230726 15:09:17.517"/>
 </kw>
-<status status="FAIL" starttime="20230726 14:58:47.419" endtime="20230726 14:58:48.363">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<status status="FAIL" starttime="20230726 15:09:16.601" endtime="20230726 15:09:17.517">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:58:48.364" endtime="20230726 14:58:48.365"/>
+<status status="PASS" starttime="20230726 15:09:17.519" endtime="20230726 15:09:17.519"/>
 </kw>
-<status status="FAIL" starttime="20230726 14:58:47.402" endtime="20230726 14:58:48.365"/>
+<status status="FAIL" starttime="20230726 15:09:16.587" endtime="20230726 15:09:17.519"/>
 </suite>
 <suite id="s1-s4" name="TC Sortable Data Tables" source="G:\Automated\the-internet-web-test\tests\TC_Sortable_Data_Tables.robot">
 <test id="s1-s4-t1" name="Sort Data Tables" line="6">
@@ -106,49 +106,49 @@
 <arg>https://the-internet.herokuapp.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:58:48.382" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
-<msg timestamp="20230726 14:58:49.270" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20230726 14:58:49.270" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<msg timestamp="20230726 15:09:17.538" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg timestamp="20230726 15:09:18.471" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 15:09:18.472" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </msg>
-<status status="FAIL" starttime="20230726 14:58:48.382" endtime="20230726 14:58:49.270"/>
+<status status="FAIL" starttime="20230726 15:09:17.537" endtime="20230726 15:09:18.473"/>
 </kw>
 <kw name="Click Sort Data Tables Menu" library="home_page">
-<status status="NOT RUN" starttime="20230726 14:58:49.271" endtime="20230726 14:58:49.271"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.474" endtime="20230726 15:09:18.475"/>
 </kw>
 <kw name="Click Sort Last Name For Example1" library="sortable_data_tables_page">
-<status status="NOT RUN" starttime="20230726 14:58:49.272" endtime="20230726 14:58:49.272"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.475" endtime="20230726 15:09:18.475"/>
 </kw>
 <kw name="Verify Sort Data Example1" library="sortable_data_tables_feature">
-<status status="NOT RUN" starttime="20230726 14:58:49.272" endtime="20230726 14:58:49.272"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.476" endtime="20230726 15:09:18.476"/>
 </kw>
 <kw name="Click Sort Last Name For Example1" library="sortable_data_tables_page">
-<status status="NOT RUN" starttime="20230726 14:58:49.272" endtime="20230726 14:58:49.272"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.477" endtime="20230726 15:09:18.477"/>
 </kw>
 <kw name="Verify Reverse Sort Data Example1" library="sortable_data_tables_feature">
-<status status="NOT RUN" starttime="20230726 14:58:49.272" endtime="20230726 14:58:49.272"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.478" endtime="20230726 15:09:18.478"/>
 </kw>
 <kw name="Click Sort Last Name For Example2" library="sortable_data_tables_page">
-<status status="NOT RUN" starttime="20230726 14:58:49.273" endtime="20230726 14:58:49.273"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.479" endtime="20230726 15:09:18.480"/>
 </kw>
 <kw name="Verify Sort Data Example2" library="sortable_data_tables_feature">
-<status status="NOT RUN" starttime="20230726 14:58:49.273" endtime="20230726 14:58:49.273"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.480" endtime="20230726 15:09:18.480"/>
 </kw>
 <kw name="Click Sort Last Name For Example2" library="sortable_data_tables_page">
-<status status="NOT RUN" starttime="20230726 14:58:49.273" endtime="20230726 14:58:49.273"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.482" endtime="20230726 15:09:18.482"/>
 </kw>
 <kw name="Verify Reverse Sort Data Example2" library="sortable_data_tables_feature">
-<status status="NOT RUN" starttime="20230726 14:58:49.273" endtime="20230726 14:58:49.273"/>
+<status status="NOT RUN" starttime="20230726 15:09:18.483" endtime="20230726 15:09:18.483"/>
 </kw>
-<status status="FAIL" starttime="20230726 14:58:48.381" endtime="20230726 14:58:49.275">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<status status="FAIL" starttime="20230726 15:09:17.537" endtime="20230726 15:09:18.485">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 </status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:58:49.276" endtime="20230726 14:58:49.276"/>
+<status status="PASS" starttime="20230726 15:09:18.488" endtime="20230726 15:09:18.489"/>
 </kw>
-<status status="FAIL" starttime="20230726 14:58:48.365" endtime="20230726 14:58:49.277"/>
+<status status="FAIL" starttime="20230726 15:09:17.520" endtime="20230726 15:09:18.489"/>
 </suite>
-<status status="FAIL" starttime="20230726 14:58:45.143" endtime="20230726 14:58:49.279"/>
+<status status="FAIL" starttime="20230726 15:09:14.385" endtime="20230726 15:09:18.493"/>
 </suite>
 <statistics>
 <total>
