@@ -14,3 +14,7 @@ Click Sort Data Tables Menu
 Click Add Remove Elements Menu
     SeleniumLibrary.Wait Until Element Is Visible    ${ADD.REMOVE.ELEMENTS.TEXT}    10s
     SeleniumLibrary.Click Element                    ${ADD.REMOVE.ELEMENTS.TEXT}
+
+Click Checkboxs Menu
+    SeleniumLibrary.Wait Until Element Is Visible    ${CHECKBOXS.TEXT}    10s
+    SeleniumLibrary.Click Element                    ${CHECKBOXS.TEXT}
